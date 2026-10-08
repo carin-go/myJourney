@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_be802cb08f804f8a9052e5bd4eb0acdf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_be802cb08f804f8a9052e5bd4eb0acdf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_be802cb08f804f8a9052e5bd4eb0acdf = L.map(
+                "map_be802cb08f804f8a9052e5bd4eb0acdf",
+                {
+                    center: [52.62478785364236, 13.217235935692834],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_97877e5694ce9d5e454fd2dd07813dd1 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u00a9 Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_97877e5694ce9d5e454fd2dd07813dd1.addTo(map_be802cb08f804f8a9052e5bd4eb0acdf);
+        
+    
+            var marker_6071a8548adc327187e3520190f5f9fb = L.marker(
+                [52.62478785364236, 13.217235935692834],
+                {
+}
+            ).addTo(map_be802cb08f804f8a9052e5bd4eb0acdf);
+        
+    
+        var popup_eace90eabad249ba0c0afbc742a36bda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8ead906fe0b6955e4572df39b66ff54 = $(`<div id="html_c8ead906fe0b6955e4572df39b66ff54" style="width: 100.0%; height: 100.0%;">Hometown: Where it started</div>`)[0];
+                popup_eace90eabad249ba0c0afbc742a36bda.setContent(html_c8ead906fe0b6955e4572df39b66ff54);
+            
+        
+
+        marker_6071a8548adc327187e3520190f5f9fb.bindPopup(popup_eace90eabad249ba0c0afbc742a36bda)
+        ;
+
+        
+    
+    
+            var marker_0e5c91f8f2c28d3d3582ea13ebd599be = L.marker(
+                [52.44688228559079, 13.601952184287903],
+                {
+}
+            ).addTo(map_be802cb08f804f8a9052e5bd4eb0acdf);
+        
+    
+        var popup_abeee0c3018dd24d556400c794a66be7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e31c76f51bf9a087e26d301dfcc7473f = $(`<div id="html_e31c76f51bf9a087e26d301dfcc7473f" style="width: 100.0%; height: 100.0%;">Highschool: Where it continued</div>`)[0];
+                popup_abeee0c3018dd24d556400c794a66be7.setContent(html_e31c76f51bf9a087e26d301dfcc7473f);
+            
+        
+
+        marker_0e5c91f8f2c28d3d3582ea13ebd599be.bindPopup(popup_abeee0c3018dd24d556400c794a66be7)
+        ;
+
+        
+    
+    
+            var marker_f923061c04365024535af3b12752963a = L.marker(
+                [52.50877913284508, 13.526821417308966],
+                {
+}
+            ).addTo(map_be802cb08f804f8a9052e5bd4eb0acdf);
+        
+    
+        var popup_951f4239f29d80741605098deeba79c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c18514929018726533d84c32f4be0823 = $(`<div id="html_c18514929018726533d84c32f4be0823" style="width: 100.0%; height: 100.0%;">Bachelor city: Bachelor's degree</div>`)[0];
+                popup_951f4239f29d80741605098deeba79c6.setContent(html_c18514929018726533d84c32f4be0823);
+            
+        
+
+        marker_f923061c04365024535af3b12752963a.bindPopup(popup_951f4239f29d80741605098deeba79c6)
+        ;
+
+        
+    
+    
+            var marker_d156f2760055d7e67b21f53ab44fc565 = L.marker(
+                [52.48556567422969, 13.337694682437352],
+                {
+}
+            ).addTo(map_be802cb08f804f8a9052e5bd4eb0acdf);
+        
+    
+        var popup_7fff89cd27c655e731d7467678899271 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_289d8e0f218a9722563be03ae98d35d6 = $(`<div id="html_289d8e0f218a9722563be03ae98d35d6" style="width: 100.0%; height: 100.0%;">Berlin: HWR Berlin</div>`)[0];
+                popup_7fff89cd27c655e731d7467678899271.setContent(html_289d8e0f218a9722563be03ae98d35d6);
+            
+        
+
+        marker_d156f2760055d7e67b21f53ab44fc565.bindPopup(popup_7fff89cd27c655e731d7467678899271)
+        ;
+
+        
+    
+    
+            var poly_line_e8292a8bbe2e656bf75165c1fb2c6266 = L.polyline(
+                [[52.62478785364236, 13.217235935692834], [52.44688228559079, 13.601952184287903], [52.50877913284508, 13.526821417308966], [52.48556567422969, 13.337694682437352]],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_be802cb08f804f8a9052e5bd4eb0acdf);
+        
+    
+            map_be802cb08f804f8a9052e5bd4eb0acdf.fitBounds(
+                [[52.62478785364236, 13.217235935692834], [52.44688228559079, 13.601952184287903], [52.50877913284508, 13.526821417308966], [52.48556567422969, 13.337694682437352]],
+                {}
+            );
+        
+</script>
+</html>
