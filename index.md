@@ -39,7 +39,7 @@ After a one-week break I'm starting my Master's, aiming to learn data analytics,
 
 ## Where I've been
 
-<iframe src="map (5).html" width="100%" height="450" style="border:0"></iframe>
+<iframe src="map.html" width="100%" height="450" style="border:0"></iframe>
 
 ## Beyond the classroom
 
